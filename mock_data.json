@@ -1,0 +1,120 @@
+{
+  "restaurants": [
+    {
+      "id": "buka_001",
+      "name": "Mama Cass Kitchen",
+      "cuisine": "Nigerian",
+      "priceRange": 2,
+      "location": { "lat": 6.5244, "lng": 3.3792 },
+      "address": "Herbert Macaulay Way, Yaba, Lagos",
+      "tags": ["jollof", "swallow", "spicy"],
+      "avgRating": "4.5",
+      "isOpen": 1,
+      "images": ["https://images.unsplash.com/photo-1546069901-ba9599a7e63c"]
+    },
+    {
+      "id": "buka_002",
+      "name": "White House Buka",
+      "cuisine": "Traditional Nigerian",
+      "priceRange": 1,
+      "location": { "lat": 6.5182, "lng": 3.3701 },
+      "address": "Chapel Street, Yaba, Lagos",
+      "tags": ["amala", "ewedu", "gbegiri"],
+      "avgRating": "4.8",
+      "isOpen": 1,
+      "images": ["https://images.unsplash.com/photo-1504674900247-0877df9cc836"]
+    },
+    {
+      "id": "buka_003",
+      "name": "Bukateria Supreme",
+      "cuisine": "Fast Food",
+      "priceRange": 3,
+      "location": { "lat": 9.0765, "lng": 7.3986 },
+      "address": "Wuse II, Abuja",
+      "tags": ["sharwama", "chicken", "fries"],
+      "avgRating": "4.2",
+      "isOpen": 0,
+      "images": ["https://images.unsplash.com/photo-1565299624946-b28f40a0ae38"]
+    },
+    {
+      "id": "buka_004",
+      "name": "Calabar Kitchen",
+      "cuisine": "South-South Nigerian",
+      "priceRange": 2,
+      "location": { "lat": 4.9757, "lng": 8.3417 },
+      "address": "Marian Road, Calabar",
+      "tags": ["afang", "edikaikong", "seafood"],
+      "avgRating": "4.7",
+      "isOpen": 1,
+      "images": []
+    },
+    {
+      "id": "buka_005",
+      "name": "The London Buka",
+      "cuisine": "Afro-Fusion",
+      "priceRange": 4,
+      "location": { "lat": 51.5074, "lng": -0.1278 },
+      "address": "Peckham, London",
+      "tags": ["suya-tacos", "jollof-risotto"],
+      "avgRating": "4.6",
+      "isOpen": 1,
+      "images": ["https://images.unsplash.com/photo-1555939594-58d7cb561ad1"]
+    }
+  ],
+  "users": [
+    {
+      "id": "user_101",
+      "name": "Chijioke Adebayo",
+      "email": "chijioke@localbuka.com",
+      "referredBy": null
+    },
+    {
+      "id": "user_102",
+      "name": "Amaka Igwe",
+      "email": "amaka@localbuka.com",
+      "referredBy": "user_101"
+    },
+    {
+      "id": "user_103",
+      "name": "Tunde Bakare",
+      "email": "tunde@localbuka.com",
+      "referredBy": null
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_201",
+      "restaurantId": "buka_001",
+      "userId": "user_101",
+      "rating": 5,
+      "comment": "The best jollof rice in Yaba, hands down!",
+      "tags": ["jollof", "spicy"],
+      "createdAt": "2026-06-28T12:00:00Z"
+    },
+    {
+      "id": "rev_202",
+      "restaurantId": "buka_002",
+      "userId": "user_102",
+      "rating": 4,
+      "comment": "Amala was piping hot and soft. The soup was tasty.",
+      "tags": ["amala", "ewedu"],
+      "createdAt": "2026-06-29T14:30:00Z"
+    }
+  ],
+  "pointsLedger": [
+    {
+      "id": "tx_301",
+      "userId": "user_101",
+      "action": "review",
+      "points": 20,
+      "createdAt": "2026-06-28T12:00:00Z"
+    },
+    {
+      "id": "tx_302",
+      "userId": "user_102",
+      "action": "check-in",
+      "points": 50,
+      "createdAt": "2026-06-29T14:15:00Z"
+    }
+  ]
+}
