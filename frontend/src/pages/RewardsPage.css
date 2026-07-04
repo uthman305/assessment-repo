@@ -1,0 +1,102 @@
+.rewards {
+  max-width: 560px;
+}
+
+.rewards__balance-card {
+  background: linear-gradient(135deg, var(--color-primary), #c94a1a);
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.rewards__balance-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.rewards__balance-value {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.rewards__balance-hint {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.rewards__redeem-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.rewards__redeem-card h3 {
+  margin-bottom: 6px;
+}
+
+.rewards__redeem-hint {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  margin: 0 0 14px;
+}
+
+.rewards__redeem-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rewards__redeem-controls select {
+  flex: 1;
+  min-width: 180px;
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text);
+  padding: 9px 12px;
+}
+
+.rewards__voucher {
+  margin-top: 14px;
+  color: var(--color-gold);
+}
+
+.rewards__history-title {
+  margin-bottom: 10px;
+}
+
+.rewards__history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rewards__history-item {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+}
+
+.rewards__points-positive {
+  color: var(--color-secondary-hover);
+  font-weight: 600;
+}
+
+.rewards__points-negative {
+  color: var(--color-danger);
+  font-weight: 600;
+}
