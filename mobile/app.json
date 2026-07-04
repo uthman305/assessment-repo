@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "LocalBuka",
+    "slug": "localbuka-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "localbuka",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "LocalBuka uses your location to confirm you're at the restaurant before awarding check-in points."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#17140f",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "LocalBuka uses your location to confirm you're at the restaurant before awarding check-in points."
+        }
+      ]
+    ]
+  }
+}
